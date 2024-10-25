@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dut2ims0dlcg2"]
+
+[ext_resource type="Script" path="res://class.gd" id="1_gy1gs"]
+[ext_resource type="Script" path="res://Character.gd" id="2_2r4lc"]
+
+[node name="Class" type="Node" node_paths=PackedStringArray("character_to_kill")]
+script = ExtResource("1_gy1gs")
+character_to_kill = NodePath("Character3")
+
+[node name="Character" type="Node" parent="."]
+script = ExtResource("2_2r4lc")
+profession = "Potion seller"
+health = 40
+
+[node name="Character2" type="Node" parent="."]
+script = ExtResource("2_2r4lc")
+profession = "Ex-adventurer"
+health = 30
+
+[node name="Character3" type="Node" parent="."]
+script = ExtResource("2_2r4lc")
+profession = "Knight"
+health = 150
